@@ -3,30 +3,32 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
 
-export function Footer() {
+export function Footer({ minimal = false }) {
   return (
     <footer className="bg-slate-50">
       <Container>
-        <div className="py-4">
-          <img
-            src="/xonic.svg"
-            alt="Xonic News"
-            className="mx-auto h-5 w-auto"
-          />
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-            </div>
-          </nav>
-        </div>
+        {!minimal ? (
+          <div className="py-4">
+            <img
+              src="/xonic.svg"
+              alt="Xonic News"
+              className="mx-auto h-5 w-auto"
+            />
+            <nav className="mt-10 text-sm" aria-label="quick links">
+              <div className="-my-1 flex justify-center gap-x-6">
+                <NavLink href="#features">Features</NavLink>
+                <NavLink href="#testimonials">Testimonials</NavLink>
+                <NavLink href="#pricing">Pricing</NavLink>
+              </div>
+            </nav>
+          </div>
+        ) : null}
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
               href="https://twitter.com"
               className="group"
-              aria-label="TaxPal on Twitter"
+              aria-label="Xonic on Twitter"
             >
               <svg
                 aria-hidden="true"
@@ -38,7 +40,7 @@ export function Footer() {
             <Link
               href="https://github.com"
               className="group"
-              aria-label="TaxPal on GitHub"
+              aria-label="Xonic on GitHub"
             >
               <svg
                 aria-hidden="true"
@@ -49,7 +51,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
+            Copyright &copy; {new Date().getFullYear()} xonic.ai. All rights
             reserved.
           </p>
         </div>

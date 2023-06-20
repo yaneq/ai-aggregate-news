@@ -31,7 +31,7 @@ export default function News() {
               </ApolloProvider>
             </div>
           </div>
-          <Footer />
+          <Footer minimal />
         </div>
         <div className={styles.gradients} />
       </Layout>
