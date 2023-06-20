@@ -21,13 +21,6 @@ export const Article = ({ article }: { article: INewsArticle }) => (
           src={'https://i.pravatar.cc/150?img=' + article.id.toString()}
           alt=""
         />
-
-        <span className="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px">
-          <ChatBubbleLeftEllipsisIcon
-            className="h-5 w-5 text-gray-400"
-            aria-hidden="true"
-          />
-        </span>
       </div>
       <div className="min-w-0 flex-1">
         <div>

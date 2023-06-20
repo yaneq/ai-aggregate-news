@@ -36,7 +36,7 @@ export default function News() {
       </Head>
       <Layout>
         <div className={styles.gradients}>
-          <div className="mx-auto mt-10 w-1/2 rounded-lg bg-white p-10">
+          <div className="mx-10 mt-10 rounded-lg bg-white p-10 md:mx-auto md:w-2/3 lg:w-1/2">
             <ul role="list" className="-mb-8">
               {articles.map((article, idx) => (
                 <li key={article.id}>
