@@ -28,8 +28,8 @@ module.exports = {
         '4xl': '2rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        display: ['Lexend', ...defaultTheme.fontFamily.sans],
+        display: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        title: ['var(--font-montserrat)', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
         '2xl': '40rem',
