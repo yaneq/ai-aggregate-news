@@ -7,7 +7,6 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {
@@ -97,8 +96,12 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home" className=''>
-              <Logo className="h-10 w-auto" fill={'#2563EB'}/>
+            <Link href="#" aria-label="Home">
+              <img
+                src="/xonic.svg"
+                alt="Xonic News"
+                className="w-2/3 sm:w-1/3 lg:w-1/4"
+              />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
