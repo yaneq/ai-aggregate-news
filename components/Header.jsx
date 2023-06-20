@@ -100,7 +100,7 @@ export function Header() {
               <img
                 src="/xonic.svg"
                 alt="Xonic News"
-                className="w-2/3 sm:w-1/3 lg:w-1/4"
+                className="h-20 w-2/3 sm:w-1/3 lg:w-1/4"
               />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
