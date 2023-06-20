@@ -24,13 +24,14 @@ export function Hero() {
           </svg>
           <span className="relative">Tailored news</span>
         </span>{' '}
-         - just for you!
+        - just for you!
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-      Discover your tailored news feed at xonic.ai – Your personalized news hub!
+        Discover your tailored news feed at xonic.ai – Your personalized news
+        hub!
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get 1 month free</Button>
+        <Button href="/news">Get 1 month free</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"
