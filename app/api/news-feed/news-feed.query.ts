@@ -9,10 +9,10 @@ export const insetNewsQuery = (
     }`
 }
 
-export const FindNewsByTitleQuery = (title: string) => {
+export const FindNewsBySourceUrlQuery = (source_url: string) => {
   return `query  {
-    news_articles(where: {title: {_eq: "${title}"}}) {
-        id published_at title 
+    news_articles(where: {source_url: {_eq: "${source_url}"}}) {
+        id published_at title source_url
       }
     }
     `
